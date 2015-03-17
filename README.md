@@ -9,9 +9,9 @@ I will definitely try to make this a compact production-ready framework whenever
 The user can view the original full-sized image by clicking on the thumbnail. However, if a user has chosen not to share the original copy of him image, the next available large size will be shown. 
 
 ####Pagination Issue
-The flickr API call has been implemented using 500 page size. There are two reasons behind it.
-1. The flickr API does not behave correctly past 10000 pages. With per_page value of 5, most of the searches will have more than 10000 pages returned.
-2. The application caches every 500 records of data so once a page is loaded, next 100 pages are returned immediately minimizing the number of API calls.
+While the font-end shows 5 images per page, the back-end flickr API call has been implemented using 500 page size. There are two reasons behind it.
+1. The flickr API does not behave correctly past 10000 pages, in fact it resets to 10000 (I did not find it anywhere documented but the tests were solid). With per_page value of 5, most of the searches will have more than 10000 pages returned.
+2. The application caches every 500 records of photos, so once a page is loaded, next 100 pages are returned immediately minimizing the number of API calls required from the front-end.
 
 ####Business and Presentation
 This application has a clear seperation between business logic and view files. However, there are certain cases where the view files has some logics written which could have been moved to the controller but given the size and simplicity of the overall task, the current implemention makes more sense.
