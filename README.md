@@ -1,6 +1,10 @@
 # flickrgal
 This is a sample flickr gallery which allows the user to search for photos using keywords/s. The gallery loads 5 images per page and allows the user to navigate between pages.
 
+A very quick framework has been written for controller/view bind and for basic routing. This framework uses a single index.php for all routing and rendering purposes. This makes further additions to the application easier. I have put comments wherever necessary within the controller as well as within the view file. A brief guide on how to use and extend the framework can be found inside the index.php file.
+
+I will definitely try to make this a compact production-ready framework whenever I have some free time, including database connectivity, a small ORM and pretty URLs.
+
 ####Pagination Issue
 The flickr API call has been implemented using 500 page size. There are two reasons behind it.
 1. The flickr API does not behave correctly past 10000 pages. With per_page value of 5, most of the searches will have more than 10000 pages returned.
