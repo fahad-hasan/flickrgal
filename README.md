@@ -5,6 +5,9 @@ A very quick framework has been written for controller/view bind and for basic r
 
 I will definitely try to make this a compact production-ready framework whenever I have some free time, including database connectivity, a small ORM and pretty URLs.
 
+####Viewing the original image
+The user can view the original full-sized image by clicking on the thumbnail. However, if a user has chosen not to share the original copy of him image, the next available large size will be shown. 
+
 ####Pagination Issue
 The flickr API call has been implemented using 500 page size. There are two reasons behind it.
 1. The flickr API does not behave correctly past 10000 pages. With per_page value of 5, most of the searches will have more than 10000 pages returned.
@@ -18,4 +21,7 @@ On a few occasisons, the total items returned by the flickr API does not match t
 
 ####Security and CSRF
 Given the simplicity of the project, I have not included any CSRF checks. However, basic form security is in place which prevents the users from putting malicious entries like HTML, Quotes etc within the search box.
+
+####License
+Do whatever you want.
 
