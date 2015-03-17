@@ -5,6 +5,9 @@ A very quick framework has been written for controller/view bind and for basic r
 
 I will definitely try to make this a compact production-ready framework whenever I have some free time, including database connectivity, a small ORM and pretty URLs.
 
+####HTML/CSS and PHP only
+Only HTML/CSS and PHP has been used as part of the specification. No UI framework or JavaScript has been used.
+
 ####Viewing the original image
 The user can view the original full-sized image by clicking on the thumbnail. However, if a user has chosen not to share the original copy of him image, the next available large size will be shown. 
 
